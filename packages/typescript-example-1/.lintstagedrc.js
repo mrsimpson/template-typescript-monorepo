@@ -1,5 +1,5 @@
-const baseConfig = require("../../.lintstagedrc.js");
+import baseConfig from "../../.lintstagedrc.js";
 
-module.exports = {
+export default {
   ...baseConfig
 };

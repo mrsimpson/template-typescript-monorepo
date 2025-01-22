@@ -1,9 +1,5 @@
-import { defineConfig } from "vitest/config";
+// @ts-check
+/** @type {import("vitest.config.ts").defineConfig} */
 
-export default defineConfig({
-  test: {
-    globals: true,
-    environment: "node",
-    setupFiles: ["../../vitest.setup.ts"]
-  }
-});
+const baseConfig = await import("../../vitest.config.js");
+export default baseConfig.default;
