@@ -1,8 +1,11 @@
 {
   "name": "modern-monorepo-example",
   "version": "0.0.0-development",
-  "description": "An example of a modern Monorepo",
-  "author": "Luke Baker <luke.baker@live.com>",
+  "description": "Template for a typescript based monorepo, batteries included",
+  "authors": [
+    "Luke Baker <luke.baker@live.com>",
+    "Oliver Jägle <github@beimir.net>"
+  ],
   "license": "MIT",
   "keywords": [
     "NPM",
@@ -12,14 +15,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bakeruk/modern-monorepo-example.git"
+    "url": "https://github.com/mrsimpson/template-typescript-monorepo"
   },
   "publishConfig": {
     "access": "public"
   },
   "engines": {
-    "node": ">=18",
-    "pnpm": ">=7.5.1"
+    "node": ">=20",
+    "pnpm": ">=9.0.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -64,5 +67,6 @@
     "vitepress": "1.6.1",
     "vitepress-plugin-mermaid": "2.0.17",
     "vitest": "^1.6.0"
-  }
+  },
+  "packageManager": "pnpm@9.14.2"
 }
