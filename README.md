@@ -144,6 +144,61 @@ It is worth pointing out the `.github/workflows/pr.yaml` file. This workflow run
 
 A specification for adding human and machine readable meaning to commit messages. It is a great tool for automating your workflow and can be used to build, test and deploy your codebase.
 
+The project follows the Conventional Commits specification with the following accepted prefixes:
+
+- `feat:` - A new feature (minor version bump)
+
+  - Example: `feat: add user authentication module`
+
+- `fix:` - A bug fix (patch version bump)
+
+  - Example: `fix: resolve memory leak in data processing`
+
+- `docs:` - Documentation changes
+
+  - Example: `docs: update README with new installation instructions`
+
+- `style:` - Code formatting, missing semicolons, etc. (no functional changes)
+
+  - Example: `style: format code according to eslint rules`
+
+- `refactor:` - Code refactoring without introducing new features or fixing bugs
+
+  - Example: `refactor: simplify authentication logic`
+
+- `test:` - Adding or modifying tests
+
+  - Example: `test: add unit tests for user service`
+
+- `chore:` - Maintenance tasks, updates to build processes, etc.
+
+  - Example: `chore: update dependencies to latest versions`
+
+- `perf:` - Performance improvements
+
+  - Example: `perf: optimize database query performance`
+
+- `ci:` - Changes to CI configuration files and scripts
+
+  - Example: `ci: update GitHub Actions workflow`
+
+- `build:` - Changes that affect the build system or external dependencies
+
+  - Example: `build: update webpack configuration`
+
+- `revert:` - Reverting previous commits
+  - Example: `revert: revert changes introduced in commit abc123`
+
+Optional scopes can be added in parentheses to provide additional context:
+
+- `feat(auth): add two-factor authentication`
+- `fix(api): resolve connection timeout issue`
+
+Breaking changes should be indicated by adding an exclamation mark after the type/scope:
+
+- `feat!: major API redesign`
+- `refactor!(core): complete system architecture change`
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
