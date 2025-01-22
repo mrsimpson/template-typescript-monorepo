@@ -29,10 +29,13 @@
     "lint:fix": "pnpm lint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "test": "jest",
+    "test": "vitest",
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mme/typescript-example-2": "workspace:0.0.0-development"
+    "@mme/typescript-example-2": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3"
   }
 }

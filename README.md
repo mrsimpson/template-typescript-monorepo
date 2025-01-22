@@ -26,7 +26,7 @@
     - [Prettier](#prettier)
     - [Eslint](#eslint)
     - [Nodemon](#nodemon)
-    - [Jest](#jest)
+    - [Vitest](#vitest)
     - [GitHub Actions](#github-actions)
     - [Conventional Commits](#conventional-commits)
 - [Getting Started](#getting-started)
@@ -58,7 +58,7 @@ This project uses the following technologies and tools:
 - [Prettier](https://prettier.io/) - Code formatter
 - [Eslint](https://eslint.org/) - Code linter
 - [Nodemon](https://github.com/remy/nodemon) - Development runtime (script monitor)
-- [Jest](https://jestjs.io/) - Frontend & backend test suite
+- [Vitest](https://vitest.dev/) - Frontend & backend test suite
 - [GitHub Actions](https://github.com/features/actions) - CI/CD workflow automation
 - [Conventional Commits](https://www.conventionalcommits.org/) - Commit message standard
 
@@ -124,11 +124,11 @@ Within the `packages/*` directories, you will notice a `nodemode.json` that has 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Jest
+#### Vitest
 
-A delightful JavaScript Testing Framework with a focus on simplicity. Jest is a great tool for testing your codebase and can be used for both frontend and backend code.
+A fast and feature-rich Vite-native testing framework. Vitest provides a seamless testing experience with native TypeScript support, built-in code coverage, and a simple, Jest-compatible API.
 
-As Typescript does all of the type-checking, there's no requirement to use something like `ts-jest` to run our files - we would be type-checking twice. Instead, we can lean on **SWC**, specifically [@swc/jest](https://swc.rs/docs/usage/jest). This is a Jest transformer that uses SWC to compile the Typescript codebase. This is much faster than `ts-jest` and is also a lot more performant than the default Typescript compiler.
+Unlike the previous Jest setup, Vitest leverages Vite's native ESM support and provides faster test execution with minimal configuration.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
