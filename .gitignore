@@ -17,3 +17,6 @@ coverage
 # Env files
 .env*
 !.env.example
+
+# vitepress
+docs/.vitepress/cache

@@ -29,6 +29,7 @@
     - [Vitest](#vitest)
     - [GitHub Actions](#github-actions)
     - [Conventional Commits](#conventional-commits)
+    - [Vitepress](#vitepress)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
     - [PNPM](#pnpm-1)
@@ -147,49 +148,16 @@ A specification for adding human and machine readable meaning to commit messages
 The project follows the Conventional Commits specification with the following accepted prefixes:
 
 - `feat:` - A new feature (minor version bump)
-
-  - Example: `feat: add user authentication module`
-
 - `fix:` - A bug fix (patch version bump)
-
-  - Example: `fix: resolve memory leak in data processing`
-
 - `docs:` - Documentation changes
-
-  - Example: `docs: update README with new installation instructions`
-
 - `style:` - Code formatting, missing semicolons, etc. (no functional changes)
-
-  - Example: `style: format code according to eslint rules`
-
 - `refactor:` - Code refactoring without introducing new features or fixing bugs
-
-  - Example: `refactor: simplify authentication logic`
-
 - `test:` - Adding or modifying tests
-
-  - Example: `test: add unit tests for user service`
-
 - `chore:` - Maintenance tasks, updates to build processes, etc.
-
-  - Example: `chore: update dependencies to latest versions`
-
 - `perf:` - Performance improvements
-
-  - Example: `perf: optimize database query performance`
-
 - `ci:` - Changes to CI configuration files and scripts
-
-  - Example: `ci: update GitHub Actions workflow`
-
 - `build:` - Changes that affect the build system or external dependencies
-
-  - Example: `build: update webpack configuration`
-
-- `revert:` - Reverting previous commits
-  - Example: `revert: revert changes introduced in commit abc123`
-
-Optional scopes can be added in parentheses to provide additional context:
+  Optional scopes can be added in parentheses to provide additional context:
 
 - `feat(auth): add two-factor authentication`
 - `fix(api): resolve connection timeout issue`
@@ -198,6 +166,28 @@ Breaking changes should be indicated by adding an exclamation mark after the typ
 
 - `feat!: major API redesign`
 - `refactor!(core): complete system architecture change`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### VitePress
+
+A modern static site generator powered by Vue 3 and Vite. VitePress enables the creation of fast, lightweight documentation sites with a focus on developer experience and performance.
+
+Project documentation scripts:
+
+- `pnpm docs:dev`: Start local development server
+- `pnpm docs:build`: Build production documentation
+- `pnpm docs:preview`: Preview production build locally
+
+The documentation is located in the `docs/` directory and uses VitePress and supports Mermaid diagrams.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### Arc42
+
+A comprehensive template for software and system architecture documentation. Arc42 provides a structured approach to documenting software architectures, making complex systems more understandable and maintainable.
+
+The project uses VitePress to render Arc42-style documentation, allowing for easy navigation and maintenance of architectural documentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
