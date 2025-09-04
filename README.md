@@ -25,6 +25,7 @@
     - [Typescript](#typescript)
     - [Prettier](#prettier)
     - [Eslint](#eslint)
+    - [Oxlint](#oxlint)
     - [Nodemon](#nodemon)
     - [Vitest](#vitest)
     - [GitHub Actions](#github-actions)
@@ -58,6 +59,7 @@ This project uses the following technologies and tools:
 - [Typescript](https://www.typescriptlang.org/) - Type-safe codebase
 - [Prettier](https://prettier.io/) - Code formatter
 - [Eslint](https://eslint.org/) - Code linter
+- [Oxlint](https://oxc.rs/) - Fast Rust-based linter
 - [Nodemon](https://github.com/remy/nodemon) - Development runtime (script monitor)
 - [Vitest](https://vitest.dev/) - Frontend & backend test suite
 - [GitHub Actions](https://github.com/features/actions) - CI/CD workflow automation
@@ -114,6 +116,14 @@ An opinionated code formatter.
 #### Eslint
 
 A pluggable and configurable linting tool that statically analyses your code to quickly find problems and can be used to enforce code style.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+#### Oxlint
+
+A fast Rust-based linter that provides extremely fast linting performance. Oxlint runs before ESLint in the linting pipeline to catch common issues quickly, with ESLint handling more complex rules and auto-fixing. This two-stage approach provides both speed and comprehensive coverage.
+
+The project uses oxlint with lint-staged for pre-commit hooks, ensuring fast feedback during development while maintaining code quality.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

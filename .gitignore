@@ -19,4 +19,4 @@ coverage
 !.env.example
 
 # vitepress
-docs/.vitepress/cache
+docs/.vitepress/cache.vibe/conversation-state.sqlite

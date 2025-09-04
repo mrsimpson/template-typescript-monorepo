@@ -10,7 +10,10 @@
     "//#format": {
       "inputs": ["!.git/**", "!node_modules/**", "!packages/**"]
     },
-    "//#format:fix": {
+    "//#lint:oxlint": {
+      "inputs": ["!.git/**", "!node_modules/**", "!packages/**"]
+    },
+    "//#lint:oxlint:fix": {
       "inputs": ["!.git/**", "!node_modules/**", "!packages/**"]
     },
     "build": {
@@ -27,6 +30,8 @@
     },
     "lint": {},
     "lint:fix": {},
+    "lint:oxlint": {},
+    "lint:oxlint:fix": {},
     "format": {},
     "format:fix": {},
     "test": {
@@ -41,6 +46,7 @@
     ".eslintignore",
     ".lintstagedrc.js",
     ".prettierrc.yaml",
+    "oxlint.json",
     "tsconfig.base.json",
     "tsconfig.build.json",
     "tsconfig.json"
