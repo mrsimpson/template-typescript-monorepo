@@ -17,5 +17,6 @@
   },
   "dependencies": {
     "@mme/typescript-example-2": "workspace:*"
-  }
+  },
+  "version": "0.0.1"
 }

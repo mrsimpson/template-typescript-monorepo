@@ -15,5 +15,6 @@
     "test:watch": "vitest",
     "typecheck": "tsc"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "version": "0.0.1"
 }

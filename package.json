@@ -1,6 +1,6 @@
 {
   "name": "modern-monorepo-example",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "Template for a typescript based monorepo, batteries included",
   "authors": [
     "Luke Baker <luke.baker@live.com>",
