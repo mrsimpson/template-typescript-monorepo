@@ -6,8 +6,8 @@
     "declaration": true,
     "allowJs": true,
     "noEmit": true,
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     /* Strict Type-Checking Options */
     "noImplicitAny": true,
     "strictNullChecks": true,

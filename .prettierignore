@@ -1,8 +1,23 @@
-# Generated files
-.pnpm-store
+# Build outputs
+**/dist/
+**/node_modules/
+**/.pnpm-store/
+
+# Lock files
 pnpm-lock.yaml
-node_modules
-dist
+package-lock.json
+
+# Generated files
+**/*.d.ts.map
+**/*.js.map
+
+# Coverage
+**/coverage/
+
+# Misc
+.DS_Store
+
+# VitePress cache
 docs/.vitepress/cache
 
 # Packages

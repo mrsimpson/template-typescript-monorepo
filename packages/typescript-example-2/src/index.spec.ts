@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { world } from "./index";
+import { world } from "./index.js";
 
 describe("World", () => {
   it("should return world", () => {

@@ -2,10 +2,7 @@
   "name": "modern-monorepo-example",
   "version": "0.0.0-development",
   "description": "Template for a typescript based monorepo, batteries included",
-  "authors": [
-    "Luke Baker <luke.baker@live.com>",
-    "Oliver Jägle <github@beimir.net>"
-  ],
+  "author": "Oliver Jägle <github@beimir.net>",
   "license": "MIT",
   "keywords": [
     "NPM",
@@ -34,15 +31,17 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "lint-format": "turbo run --parallel lint format ",
-    "lint-format:fix": "turbo run --parallel lint:fix format:fix",
+    "test": "turbo run --parallel test",
+    "test:watch": "turbo run --parallel test:watch",
+    "lint:all": "turbo run --parallel lint",
+    "lint:fix:all": "turbo run --parallel lint:fix",
+    "format:check:all": "turbo run --parallel format",
+    "format:all": "turbo run --parallel format:fix",
+    "typecheck:all": "turbo run --parallel typecheck",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "test": "turbo run --parallel test",
-    "test:watch": "turbo run --parallel test",
-    "typecheck": "turbo run --parallel typecheck",
     "prepare": "husky"
   },
   "devDependencies": {
