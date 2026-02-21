@@ -1,6 +1,7 @@
 {
   "name": "modern-monorepo-example",
   "version": "0.0.0-development",
+  "private": true,
   "description": "Template for a typescript based monorepo, batteries included",
   "author": "Oliver Jägle <github@beimir.net>",
   "license": "MIT",
@@ -14,15 +15,10 @@
     "type": "git",
     "url": "https://github.com/mrsimpson/template-typescript-monorepo"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "engines": {
     "node": ">=22",
     "pnpm": ">=9.0.0"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "turbo run build",
