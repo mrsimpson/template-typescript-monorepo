@@ -1,5 +1,3 @@
-// @ts-check
-/** @type {import("vitest.config.ts").defineConfig} */
+import baseConfig from "../../vitest.config.js";
 
-const baseConfig = await import("../../vitest.config.js");
-export default baseConfig.default;
+export default baseConfig;

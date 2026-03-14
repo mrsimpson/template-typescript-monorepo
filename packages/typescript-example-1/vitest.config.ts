@@ -1,17 +1,17 @@
-// @ts-check
-/** @type {import("vitest/config").defineConfig} */
-
+import { defineConfig, mergeConfig } from "vitest/config";
 import { resolve } from "path";
-const baseConfig = await import("../../vitest.config.js");
+import baseConfig from "../../vitest.config.js";
 
-export default {
-  ...baseConfig,
-  resolve: {
-    alias: {
-      "@mme/typescript-example-2": resolve(
-        __dirname,
-        "../typescript-example-2/src/index.ts"
-      )
+export default mergeConfig(
+  baseConfig,
+  defineConfig({
+    resolve: {
+      alias: {
+        "@mme/typescript-example-2": resolve(
+          __dirname,
+          "../typescript-example-2/src/index.ts"
+        )
+      }
     }
-  }
-};
+  })
+);
