@@ -17,9 +17,7 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", "tsconfig.tsbuildinfo"]
     },
-    "clean:build": {
-      "dependsOn": ["build"]
-    },
+    "clean:build": {},
     "dev": {
       "dependsOn": ["build"],
       "cache": false,
@@ -30,7 +28,11 @@
     "format": {},
     "format:fix": {},
     "test": {
-      "dependsOn": ["build"]
+      "inputs": ["src/**", "vitest.config.ts"]
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true
     },
     "typecheck": {
       "outputs": ["tsconfig.tsbuildinfo"]
