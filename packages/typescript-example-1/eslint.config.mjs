@@ -12,6 +12,7 @@ export default [
     languageOptions: {
       parser,
       parserOptions: {
+        tsconfigRootDir: import.meta.dirname,
         project: ["./tsconfig.json", "./tsconfig.vitest.json"]
       }
     }
