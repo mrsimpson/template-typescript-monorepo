@@ -3,27 +3,27 @@ import { parser, configs } from "typescript-eslint";
 import prettier from "eslint-config-prettier";
 
 export default [
+  // Global: anchor tsconfigRootDir so typescript-eslint finds the right tsconfig
+  // when there are multiple tsconfig.json files across the monorepo
+  {
+    languageOptions: {
+      parserOptions: {
+        tsconfigRootDir: import.meta.dirname
+      }
+    }
+  },
   js.configs.recommended,
   ...configs.recommended,
   prettier,
   {
-    // Config for TypeScript files
-    files: ["**/*.{ts,tsx}"],
+    // TypeScript type-checking for root-level TS files
+    files: ["**/*.{ts,tsx,mts,cts}"],
     languageOptions: {
       parser,
       parserOptions: {
-        project: [
-          "./tsconfig.json",
-          "./docs/.vitepress/tsconfig.json",
-          "./packages/*/tsconfig.json"
-        ]
+        project: ["./tsconfig.json", "./docs/.vitepress/tsconfig.json"]
       }
     }
-  },
-  {
-    // Config for JavaScript files - no TypeScript parsing
-    files: ["**/*.{js,jsx}"],
-    ...js.configs.recommended
   },
   {
     ignores: [
@@ -31,7 +31,7 @@ export default [
       "**/dist/**",
       ".pnpm-store/**",
       "pnpm-lock.yaml",
-      "/packages/**",
+      "packages/**",
       "docs/.vitepress/cache/**"
     ]
   }
