@@ -1,11 +1,10 @@
 {
-  "name": "@mme/typescript-example-1",
+  "name": "{{scope}}/{{name}}",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -18,7 +17,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean:build": "rimraf ./dist",
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsc -p tsconfig.build.json --watch",
     "lint": "oxlint .",
     "lint:fix": "oxlint --fix .",
     "format": "prettier --check .",
@@ -27,14 +26,10 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@mme/typescript-example-2": "workspace:*"
-  },
   "devDependencies": {
     "oxlint": "catalog:",
     "prettier": "catalog:",
     "rimraf": "catalog:",
-    "tsx": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }

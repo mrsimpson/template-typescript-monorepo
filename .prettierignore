@@ -22,3 +22,6 @@ docs/.vitepress/cache
 
 # Packages
 /packages
+
+# Handlebars templates (turbo/gen) — not JS/TS source
+**/*.hbs

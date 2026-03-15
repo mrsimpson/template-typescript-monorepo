@@ -8,7 +8,7 @@ export default mergeConfig(
     resolve: {
       alias: {
         "@mme/typescript-example-2": resolve(
-          __dirname,
+          import.meta.dirname,
           "../typescript-example-2/src/index.ts"
         )
       }

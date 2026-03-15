@@ -1,6 +1,28 @@
-# Typescript example #1
+# @mme/typescript-example-1 — Application package
 
-The first typescript example for the Monorepo example
+This package demonstrates the **application** pattern in the monorepo: a runnable
+service or CLI that _consumes_ published libraries but is not itself published to npm.
+
+## Why tsc build?
+
+Applications in this monorepo are built with `tsc` file-by-file into `dist/`.
+No bundling is applied — `node_modules` remains the dependency resolution mechanism
+at runtime. This keeps the build output transparent and debuggable, and matches
+how most Node.js services are deployed (container image with `node_modules`
+installed via `pnpm install --prod`).
+
+For deployment scenarios that require a single-file artifact (Lambda, edge
+functions), swap `tsc` for `esbuild` or `tsup --bundle` in the `build` script.
+
+## Development
+
+In development, skip the build step entirely. `tsx` runs TypeScript natively and
+respects `tsconfig.json` path aliases, so changes in sibling library packages
+are picked up immediately from source:
+
+```sh
+pnpm dev   # tsx watch src/index.ts
+```
 
 ## License
 
