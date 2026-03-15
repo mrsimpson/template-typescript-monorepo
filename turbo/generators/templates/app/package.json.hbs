@@ -1,24 +1,13 @@
 {
-  "name": "@mme/typescript-example-1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "{{scope}}/{{name}}",
+  "version": "0.0.1",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "clean:build": "rimraf ./dist",
     "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
     "lint": "oxlint .",
     "lint:fix": "oxlint --fix .",
     "format": "prettier --check .",
@@ -26,9 +15,6 @@
     "test": "vitest --run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@mme/typescript-example-2": "workspace:*"
   },
   "devDependencies": {
     "oxlint": "catalog:",

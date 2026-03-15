@@ -1,6 +1,27 @@
-# Typescript example #2
+# @mme/typescript-example-2 — Library package
 
-The second typescript example for the Monorepo example
+This package demonstrates the **library** pattern in the monorepo: a module
+designed to be consumed by other packages _and_ published to npm.
+
+## Why tsc build?
+
+Libraries are built with `tsc` because type fidelity matters for consumers.
+`tsc` preserves generics exactly, emits `.d.ts` declaration files, and supports
+composite project references — none of which are guaranteed by transpile-only
+bundlers like esbuild or swc. Consumers get accurate autocomplete, correct
+narrowing, and no `any`-erasure surprises.
+
+The output is pure ES modules — no bundling, no tree-shaking. Bundling is the
+consumer's responsibility; they know their own target environment.
+
+## Development
+
+In sibling packages, `tsconfig.json` path aliases point directly to `src/` so
+no rebuild is required during development. For standalone iteration:
+
+```sh
+pnpm dev   # tsx watch src/index.ts
+```
 
 ## License
 

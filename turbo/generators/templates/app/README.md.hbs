@@ -1,0 +1,20 @@
+# {{scope}}/{{name}}
+
+An application package — a deployed service or CLI. Not published to npm.
+
+## Development
+
+Run directly with `tsx`, no build step required:
+
+```sh
+pnpm dev   # tsx watch src/index.ts
+```
+
+## Build
+
+Built with `tsc` for deployment. The output in `dist/` is run with `node dist/index.js`.
+Dependencies are resolved via `node_modules`; no bundling is applied.
+
+## License
+
+MIT

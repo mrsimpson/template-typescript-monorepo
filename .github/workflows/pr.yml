@@ -31,6 +31,9 @@ jobs:
       - name: Run linting
         run: pnpm run lint:all
 
+      - name: Check for dead code / unused exports
+        run: pnpm knip
+
       - name: Type check
         run: pnpm run typecheck:all
 

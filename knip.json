@@ -1,0 +1,10 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "workspaces": {
+    ".": {
+      "entry": ["docs/.vitepress/config.mts", "turbo/generators/config.ts"],
+      "project": [".*.{js,ts}", "*.{js,ts,mjs,mts}", "turbo/generators/**/*.ts"]
+    },
+    "packages/*": {}
+  }
+}

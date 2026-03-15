@@ -39,7 +39,7 @@
     }
   },
   "globalDependencies": [
-    "eslint.config.mjs",
+    ".oxlintrc.json",
     ".lintstagedrc.js",
     ".prettierrc.yaml",
     "tsconfig.base.json",
