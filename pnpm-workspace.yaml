@@ -4,7 +4,7 @@ packages:
 catalog:
   # TypeScript
   typescript: "^5.9.3"
-  "@tsconfig/node22": "^22.0.5"
+  "@tsconfig/node24": "^24.0.0"
   "@types/node": "^25.5.0"
   # Linting — oxlint replaces ESLint + typescript-eslint + eslint-config-prettier
   oxlint: "^1.55.0"
