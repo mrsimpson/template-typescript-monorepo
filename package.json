@@ -50,7 +50,7 @@
     "@commitlint/config-conventional": "^20.4.4",
     "@tsconfig/node22": "catalog:",
     "@types/node": "catalog:",
-    "@turbo/gen": "^2.8.17",
+    "@turbo/gen": "^2.10.12",
     "@vitest/coverage-v8": "catalog:",
     "husky": "^9.1.7",
     "knip": "^5.86.0",
