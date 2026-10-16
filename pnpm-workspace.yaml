@@ -11,7 +11,7 @@ catalog:
   # Formatting
   prettier: "^3.8.1"
   # Testing — pinned to 3.x; vitest 4+ requires vite 6 which vitepress 1.x doesn't support yet
-  vitest: "^3.2.4"
+  vitest: "^4.0.0"
   "@vitest/coverage-v8": "^3.2.4"
   # Build / Dev
   rimraf: "^6.1.3"
