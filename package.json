@@ -46,8 +46,8 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.30.0",
-    "@commitlint/cli": "^20.4.4",
-    "@commitlint/config-conventional": "^20.4.4",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@tsconfig/node22": "catalog:",
     "@types/node": "catalog:",
     "@turbo/gen": "^2.8.17",
